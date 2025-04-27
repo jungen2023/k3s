@@ -11,10 +11,12 @@ Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN�
 
 #### 安装教程
  **步骤 1：分发资源到目标节点** 
+
 解压离线包至对应目录：
 ```
 tar xzvf k3s-offline-bundle.tar.gz -C /  
 ```
+
  **步骤 2：安装 K3s Server** 
 ```
 INSTALL_K3S_SKIP_DOWNLOAD=true \  
@@ -24,6 +26,7 @@ INSTALL_K3S_EXEC="server --docker --tls-san <节点IP>" \
 关键参数说明：
 - --docker：若使用 Docker 运行时（默认 Containerd）
 - --tls-san：指定 TLS 证书的备用名称（如节点 IP 或域名）
+
  **步骤 3：加入 Agent 节点** 
 ```
 INSTALL_K3S_SKIP_DOWNLOAD=true \  
