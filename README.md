@@ -15,6 +15,9 @@ Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN�
 解压离线包至对应目录：
 ```
 tar xzvf k3s-offline-bundle.tar.gz -C /  
+cd /var/lib/rancher/k3s/agent/images
+unzip rancher_klipper-helm_v0.9.4-build20250113.tar.zip
+unzip rancher_mirrored-library-traefik_3.3.2.tar.zip
 ```
 
  **步骤 2：安装 K3s Server** 
