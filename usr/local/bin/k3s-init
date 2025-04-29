@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#set context serviceaccount secret
+#TOKEN=$(k3s kubectl get secrets cms-admin-secret -n cms -o jsonpath='{.data.token}' | base64 -d)
+#k3s kubectl config set-credentials cms-admin --token=$TOKEN

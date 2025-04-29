@@ -1,0 +1,10 @@
+[Unit]
+Description= k3s init
+After=k3s.service
+
+[Service]
+ExecStart=/usr/local/bin/k3s-init
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
